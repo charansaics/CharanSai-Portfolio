@@ -3,6 +3,8 @@ import React from "react";
 import ProjectCard from "@/components/ProjectCard.jsx";
 import { fetchProjects } from "../../lib/fetchprojects.js";
 
+export const dynamic = "force-dynamic";
+
 export default async function ProjectsPage() {
 
     const projects = await fetchProjects();
