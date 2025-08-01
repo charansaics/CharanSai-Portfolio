@@ -3,6 +3,7 @@
 
 import React, { useEffect, useState } from "react";
 import ProjectCard from "@/components/ProjectCard.jsx";
+import { fetchProjects } from "@/lib/fetchprojects.js";
 
 export default function ProjectsPage() {
     const [projects, setProjects] = useState([]);
@@ -10,7 +11,7 @@ export default function ProjectsPage() {
 
     useEffect(() => {
         async function loadProjects() {
-        const res = await fetch("/api/projects");
+        const res = await fetchProjects()
         const data = await res.json();
         setProjects(data);
         setLoading(false);
