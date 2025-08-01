@@ -10,7 +10,7 @@ export const metadata = {
 
         <div>
             <AdminNavbar />
-            <main className="dark:bg-black   p-10 sm:p-6">{children}</main>
+            <main className="dark:bg-black pt-20 sm:p-6">{children}</main>
         </div>
     );
 }
