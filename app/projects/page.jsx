@@ -1,22 +1,34 @@
+// app/projects/page.jsx
+"use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ProjectCard from "@/components/ProjectCard.jsx";
-import { fetchProjects } from "../../lib/fetchprojects.js";
 
-export const dynamic = "force-dynamic";
+export default function ProjectsPage() {
+    const [projects, setProjects] = useState([]);
+    const [loading, setLoading] = useState(true);
 
-export default async function ProjectsPage() {
+    useEffect(() => {
+        async function loadProjects() {
+        const res = await fetch("/api/projects");
+        const data = await res.json();
+        setProjects(data);
+        setLoading(false);
+        }
+        loadProjects();
+    }, []);
 
-    const projects = await fetchProjects();
     return (
         <div className="container mx-auto p-4">
-            {projects.length > 0 ? (
-                projects.map((project) => (
-                    <ProjectCard key={project._id} project={project} />
-                ))
-            ) : (
-                <p>No projects found.</p>
-            )}
+        {loading ? (
+            <p>Loading projects...</p>
+        ) : projects.length > 0 ? (
+            projects.map((project) => (
+            <ProjectCard key={project._id} project={project} />
+            ))
+        ) : (
+            <p>No projects found.</p>
+        )}
         </div>
     );
-};
+}
