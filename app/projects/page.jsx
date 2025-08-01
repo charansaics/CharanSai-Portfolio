@@ -11,8 +11,8 @@ export default function ProjectsPage() {
 
     useEffect(() => {
         async function loadProjects() {
-        const res = await fetchProjects()
-        const data = await res.json();
+        
+        const data = await fetchProjects();
         setProjects(data);
         setLoading(false);
         }
