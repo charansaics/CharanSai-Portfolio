@@ -1,5 +1,5 @@
 
-// import AdminNavbar from '@/components/AdminNavbar';
+import AdminNavbar from '@/components/AdminNavbar';
 
 export const metadata = {
     title: 'Admin Dashboard',
@@ -8,8 +8,8 @@ export const metadata = {
     export default function AdminDashboardLayout({ children }) {
     return (
 
-        <div>
-            {/* <AdminNavbar /> */}
+        <div className="dark:bg-black pt-20">
+            <AdminNavbar />
             <main className="dark:bg-black pt-20 sm:p-6">{children}</main>
         </div>
     );
