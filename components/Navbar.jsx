@@ -37,7 +37,7 @@ export default function Navbar() {
                 Projects
             </Link>
             <Link href="/contactme" onClick={() => setIsOpen(false)} className="block hover:text-gray-400 transition">
-                Contact
+                Contact Me
             </Link>
             </div>
         )}
