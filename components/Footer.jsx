@@ -38,7 +38,14 @@ export default function Footer() {
                 >
                     <FaGithub />
                 </a>
-
+                <a
+                    href={socialLinks.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-400 transition"
+                >
+                    <FaLinkedin />
+                </a>
                 <a
                     href={socialLinks.instagram}
                     target="_blank"
