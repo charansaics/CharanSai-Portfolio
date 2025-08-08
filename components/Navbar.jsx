@@ -16,7 +16,7 @@ export default function Navbar() {
             <div className="hidden md:flex space-x-10 text-sm uppercase font-light">
             <Link href="/" className="hover:text-gray-400 transition">Home</Link>
             <Link href="/projects" className="hover:text-gray-400 transition">Projects</Link>
-            <Link href="/contactme" className="hover:text-gray-400 transition">Contact</Link>
+            <Link href="/contactme" className="hover:text-gray-400 transition">Contact Me</Link>
             </div>
 
             {/* Hamburger Menu - Mobile Only */}
