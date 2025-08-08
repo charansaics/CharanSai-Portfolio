@@ -1,4 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Frontend
+
+This is the frontend for the portfolio website of Charan Sai Pothabattula, built with Next.js 13+ (App Router), React, and Tailwind CSS.
+
+## Features
+- Modern, responsive design with dark mode support
+- Home, About, Projects, and Contact Me sections
+- Admin login and dashboard for project and home content management
+- Animated and interactive UI elements (scroll indicators, loading spinners, etc.)
+- Social links in the footer and a vertical scroll sidebar for improved UX
+- API integration for dynamic project and home data
+
+## Structure
+- `app/` — Next.js App Router pages and layouts
+- `components/` — Reusable UI components (Navbar, Footer, ProjectCard, ContactForm, etc.)
+- `lib/` — API and data fetching utilities
+- `styles/` — Global and custom styles
+
+## Getting Started
+1. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+3. Visit [http://localhost:3000](http://localhost:3000) to view the site.
+
+## Customization
+- Update your social links and email in the Footer component.
+- Add or edit projects via the admin dashboard (requires backend setup).
+- Adjust theme and layout using Tailwind classes in the components.
+
+## Notes
+- This frontend expects a compatible backend for authentication and data APIs.
+- Environment variables may be required for API endpoints and secrets.
+
+---
+
+© 2025 Charan Sai Pothabattula. All rights reserved.
+
 
 ## Getting Started
 
@@ -18,19 +63,3 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
