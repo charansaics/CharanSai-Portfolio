@@ -22,7 +22,11 @@ export default function ProjectsPage() {
     return (
         <div className="container mx-auto p-4">
         {loading ? (
-            <p>Loading projects...<br></br>This may take a moment if the server is starting up...</p>
+            <div>
+                <p>Loading projects...</p>
+                <p>It will take time because my backend is hosted differently on free tier hosting, which uses cold start...!!!</p>
+            </div>
+            
         
         ) : projects.length > 0 ? (
             projects.map((project) => (
