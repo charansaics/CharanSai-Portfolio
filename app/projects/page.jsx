@@ -22,7 +22,8 @@ export default function ProjectsPage() {
     return (
         <div className="container mx-auto p-4">
         {loading ? (
-            <p>Loading projects...</p>
+            <p>Loading projects...<br></br>This may take a moment if the server is starting up...</p>
+        
         ) : projects.length > 0 ? (
             projects.map((project) => (
             <ProjectCard key={project._id} project={project} />
